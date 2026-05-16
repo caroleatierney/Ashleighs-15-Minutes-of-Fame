@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .videoContainer {
+    display: grid;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+} */
+ * {
+    margin: 0;
+} 
+ 
+.videoContainer {
+    width: 100%;
+    position: relative;
+}
+
+.videoContainer p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@font-face {
+    font-family: 'Pricedown';
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(33, 197, 225);
+    src: local('pricedown'), url('https://github.com/infin1tyy/pricedown-font-web/blob/master/pricedown.otf') format('opentype');
+}
+
+div {
+    font-family: Pricedown;
+    font-size: 150%;
+}

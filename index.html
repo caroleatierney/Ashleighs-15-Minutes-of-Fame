@@ -6,36 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ashleigh's 15 Minutes</title>
-    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
     <link href="/src/styles.css" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
     <body style="background-color:#2626a4">
         <main class="p-10">
-            <div class="flex flex-col items-start md:flex-row">
+            <!-- Outer row elements stretch to equal height automatically -->
+            <div class="flex flex-col md:flex-row gap-6">
 
-                <div class="w-full md:w-1/2 text-center items-center text-cyan-300 p-5">
+                <!-- Image Column: Changed justify-between to justify-center -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center text-center text-cyan-300 p-5">
                     <div class="w-full flex flex-col justify-center mb-4">
                         <h1>Ashleigh Mac's</h1>
                         <h1>15 minutes of fame!!!</h1>
                     </div>
 
+                    <!-- Changed object-cover to object-contain so nothing is cropped -->
                     <img
-                        class="w-full mx-auto"
+                        class="w-full max-w-[700px] aspect-video mx-auto object-contain"
                         src="https://caroleatierney.github.io/Ashleighs-15-Minutes-of-Fame/assets/ThePriceIsRight.jpeg"
-                        
                         alt="The Price Is Right"
                     />
                 </div>
 
-                <div class="w-full md:w-1/2 text-center text-cyan-300 p-5">
+                <!-- Video Column: Matches the exact same layout structure -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center text-center text-cyan-300 p-5">
                     <div class="w-full flex flex-col justify-center mb-4">
                         <h1>Spring Break</h1>
                         <h1>March 28, 2000</h1>
                     </div>
 
-                    <div class="w-full flex flex-col items-center mb-4">
+                    <div class="w-full flex justify-center">
                         <iframe
                                 class="w-full max-w-[700px] aspect-video mx-auto"
                                 src="https://www.youtube.com/embed/s12s5pMBWVc?si=dMKKm0ZqL-g94lnr"

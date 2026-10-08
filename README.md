@@ -27,6 +27,9 @@ https://github.com/alextwothousand/pricedown-font-web
 
 
 npm run dev
-npm run build (dist)
 
-Test change
+git add .
+git commit -m "Smaller h1 on mobile"
+git push
+
+npm run build (dist) (Need to do this for changes to appear live)
